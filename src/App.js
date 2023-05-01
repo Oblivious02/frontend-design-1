@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import "./styles.css";
+import heroImg from "./images/image-hero.jpg";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <img src={heroImg} id="heroImg"></img> */}
+      <div id="heroImg">
+        <div id="overlay"></div>
+      </div>
+      <div className="container">
+        <div className="navbar web">
+          <span id="logo">loopstudios</span>
+          <ul>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Careers</a>
+            </li>
+            <li>
+              <a href="#">Events</a>
+            </li>
+            <li>
+              <a href="#">Products</a>
+            </li>
+            <li>
+              <a href="#">Support</a>
+            </li>
+          </ul>
+        </div>
+        <div id="title1">
+          <span>IMMERSIVE EXPERIENCES THAT DELIVER</span>
+        </div>
+      </div>
     </div>
   );
 }
